@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Title from './Title'
 import Menu from './Menu'
 import SocialSection from './SocialSection'
