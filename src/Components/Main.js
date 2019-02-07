@@ -22,19 +22,12 @@ const menuItems = [{
     link: ""
   }]
 
-class Main extends Component {
-  render() {
-    return <div className="container">
-             <Title title="Krishan Caldwell" />
-             <Menu items={menuItems}/>
-             <SocialSection />
-           </div>
-  }
+function Main() {
+  return <div className="container">
+           <Title title="Krishan Caldwell" />
+           <Menu items={menuItems}/>
+           <SocialSection />
+         </div>
 }
 
 export default Main
-
-// <MenuItem item={'Work'}></MenuItem>
-// <MenuItem item={'Info'}></MenuItem>
-// <MenuItem item={'Blog'}></MenuItem>
-// <MenuItem item={'Contact'}></MenuItem>
