@@ -11,6 +11,8 @@ function SocialSection() {
            <p className="social-item">Github</p>
            <p>|</p>
            <p className="social-item">Instagram</p>
+           <p>|</p>
+           <p className="social-item">Email</p>
          </div>
 }
 

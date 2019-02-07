@@ -55,3 +55,10 @@ a {
   font-size: 1.1em;
   margin: 30px 4px;
 }
+
+.footer {
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
