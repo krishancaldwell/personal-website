@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch, withRouter} from 'react-router-dom'
 import Title from './Title'
 import Menu from './Menu'
 import MenuPage from './MenuPage'
 import SocialSection from './SocialSection'
 import PageNotFound from './PageNotFound'
 import Footer from './Footer'
+import AboutPage from './AboutPage'
 
 
 class Main extends Component {
@@ -41,7 +42,7 @@ class Main extends Component {
                )} />
 
                <Route path="/info" render={() => (
-                   <MenuPage />
+                   <AboutPage />
                )} />
 
                <Route path="/blog" render={() => (

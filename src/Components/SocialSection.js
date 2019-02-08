@@ -5,19 +5,19 @@ import {Link} from 'react-router-dom'
 function SocialSection() {
   return <div className="social-section">
            <p className="social-item">
-             <Link to="https://linkedin.com/in/krishancaldwell">LinkedIn</Link>
+             <a href="https://linkedin.com/in/krishancaldwell">LinkedIn</a>
            </p>
            <p>|</p>
            <p className="social-item">
-             <Link to="https://github.com/kthecaldwell">Github</Link>
+             <a href="https://github.com/kthecaldwell">Github</a>
            </p>
            <p>|</p>
            <p className="social-item">
-             <Link to="https://instagram.com/kthecaldwell">Instagram</Link>
+             <a href="https://instagram.com/kthecaldwell">Instagram</a>
            </p>
            <p>|</p>
            <p className="social-item">
-             <Link to="mailto:krishan@kcaldwell.me">Email</Link>
+             <a href="mailto:krishan@kcaldwell.me">Email</a>
            </p>
          </div>
 }

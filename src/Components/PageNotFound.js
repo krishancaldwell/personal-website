@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
 
 class PageNotFound extends Component {
   constructor() {
@@ -21,10 +20,6 @@ class PageNotFound extends Component {
              </div>
            </div>
   }
-}
-
-PageNotFound.propTypes = {
-  handleClick: PropTypes.func.isRequired
 }
 
 export default PageNotFound
