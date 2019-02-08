@@ -52,8 +52,10 @@ class Main extends Component {
                    <MenuPage />
                )} />
 
-               <Route render={() => (
-                   <PageNotFound />
+             <Route render={({history}) => (
+                   <PageNotFound onBackButton={() => {
+                       history.push('/')
+                     }}/>
                )} />
              </Switch>
 
