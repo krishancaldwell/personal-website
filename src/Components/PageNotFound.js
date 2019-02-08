@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 class PageNotFound extends Component {
   constructor() {
@@ -21,6 +21,10 @@ class PageNotFound extends Component {
              </div>
            </div>
   }
+}
+
+PageNotFound.propTypes = {
+  handleClick: PropTypes.func.isRequired
 }
 
 export default PageNotFound
