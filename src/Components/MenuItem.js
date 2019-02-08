@@ -4,9 +4,11 @@ import {Link} from 'react-router-dom'
 
 function MenuItem(props) {
   const title = props.item.title
-  return <Link to={`/${title.toLowerCase()}`} className="menu-item">
-           <h4> {title} </h4>
-         </Link>
+  return <div>
+           <h4 className="menu-item">
+             <Link to={`/${title.toLowerCase()}`}>{ title }</Link>
+           </h4>
+         </div>
 }
 
 export default MenuItem

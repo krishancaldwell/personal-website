@@ -1,18 +1,24 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 
 function SocialSection() {
   return <div className="social-section">
-           <img src="" alt="LinkedIn"/>
-           <img src="" alt="Github"/>
-           <img src="" alt="Instagram"/>
-           <p className="social-item">LinkedIn</p>
+           <p className="social-item">
+             <Link to="https://linkedin.com/in/krishancaldwell">LinkedIn</Link>
+           </p>
            <p>|</p>
-           <p className="social-item">Github</p>
+           <p className="social-item">
+             <Link to="https://github.com/kthecaldwell">Github</Link>
+           </p>
            <p>|</p>
-           <p className="social-item">Instagram</p>
+           <p className="social-item">
+             <Link to="https://instagram.com/kthecaldwell">Instagram</Link>
+           </p>
            <p>|</p>
-           <p className="social-item">Email</p>
+           <p className="social-item">
+             <Link to="mailto:krishan@kcaldwell.me">Email</Link>
+           </p>
          </div>
 }
 

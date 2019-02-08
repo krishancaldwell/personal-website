@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
-import {Route} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import Title from './Title'
 import Menu from './Menu'
 import MenuPage from './MenuPage'
 import SocialSection from './SocialSection'
+import PageNotFound from './PageNotFound'
 import Footer from './Footer'
 
 
@@ -24,31 +25,40 @@ class Main extends Component {
   }
 
   render() {
-    return <div>
-             <Route exact path="/" render={() => (
-               <div className="container">
-                 <Title title="Krishan Caldwell" />
-                 <Menu items={this.state.menuItems}/>
-                 <SocialSection />
-               </div>
-             )} />
+    return <div className="container">
 
-             <Route path="/work" render={(params) => (
-                 <MenuPage />
-             )} />
+             <Switch>
+               <Route exact path="/" render={() => (
+                 <div className="home">
+                   <Title title="Krishan Caldwell" />
+                   <Menu items={this.state.menuItems}/>
+                   <SocialSection />
+                 </div>
+               )} />
 
-             <Route path="/info" render={(params) => (
-                 <MenuPage />
-             )} />
+               <Route path="/work" render={() => (
+                   <MenuPage />
+               )} />
 
-             <Route path="/blog" render={(params) => (
-                 <MenuPage />
-             )} />
+               <Route path="/info" render={() => (
+                   <MenuPage />
+               )} />
 
-             <Route path="/contact" render={(params) => (
-                 <MenuPage />
-             )} />
+               <Route path="/blog" render={() => (
+                   <MenuPage />
+               )} />
+
+               <Route path="/contact" render={() => (
+                   <MenuPage />
+               )} />
+
+               <Route render={() => (
+                   <PageNotFound />
+               )} />
+             </Switch>
+
              <Footer />
+
            </div>
   }
 
