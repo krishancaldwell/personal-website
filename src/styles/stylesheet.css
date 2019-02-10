@@ -21,7 +21,7 @@ h4 {
 
 h4:hover {
   transition: 0.7s linear;
-  color: #222222;
+  color: #5a5a5a;
 }
 
 a {
@@ -31,11 +31,12 @@ a {
 
 h4 a {
   color: #A7A8B0;
+  margin: 5px auto;
   transition: 0.7s linear;
 }
 
 h4 a:hover {
-  color: #222222;
+  color: #5a5a5a;
 }
 
 .container {
