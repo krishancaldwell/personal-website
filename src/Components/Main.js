@@ -80,7 +80,7 @@ function simulateFetchFromDatabase() {
       link: ""
     }, {
       id: 1,
-      title: "Info",
+      title: "About",
       link: ""
     }, {
       id: 2,

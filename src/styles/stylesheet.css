@@ -129,9 +129,24 @@ h4 a:hover {
 }
 
 .about-container {
-  height: 300px;
+  height: 400px;
   width: 160px;
   background: #FFFFFF;
   margin: auto 30px;
   padding: 50px;
+	-webkit-box-shadow: 3px 3px 4px 0px #E9E9E9;
+	box-shadow:3px 3px 4px 0px #E9E9E9
+}
+
+.headshot {
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.profile-section {
+  margin: 40px auto;
+  font-size: 1.2em;
 }
