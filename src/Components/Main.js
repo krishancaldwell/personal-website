@@ -41,7 +41,7 @@ class Main extends Component {
                    <MenuPage />
                )} />
 
-               <Route path="/info" render={() => (
+             <Route path="/about" render={() => (
                    <AboutPage />
                )} />
 
@@ -53,10 +53,10 @@ class Main extends Component {
                    <MenuPage />
                )} />
 
-             <Route render={({history}) => (
+               <Route render={({history}) => (
                    <PageNotFound onBackButton={() => {
                        history.push('/')
-                     }}/>
+                   }} />
                )} />
              </Switch>
 
