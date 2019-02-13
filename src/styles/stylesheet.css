@@ -3,6 +3,10 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-size: 2.4em;
   font-weight: 600;
@@ -27,6 +31,7 @@ h4:hover {
 a {
   text-decoration: none;
   transition: 0.7s linear;
+  color: #28454B;
 }
 
 h4 a {
@@ -44,8 +49,8 @@ h4 a:hover {
 }
 
 .home {
-    height: 560px;
-    margin: 160px auto;
+  height: 560px;
+  margin: 160px auto;
 }
 
 .menu-section {
@@ -123,20 +128,26 @@ h4 a:hover {
 }
 
 .about-section {
-  height: 600px;
+  height: 740px;
   display: flex;
   justify-content: center;
   background: #F7F7F7;
 }
 
 .about-container {
-  height: 400px;
-  width: 160px;
+  height: 580px;
+  width: 220px;
   background: #FFFFFF;
   margin: auto 30px;
-  padding: 50px;
+  padding: 40px;
 	-webkit-box-shadow: 3px 3px 4px 0px #E9E9E9;
 	box-shadow:3px 3px 4px 0px #E9E9E9
+}
+
+.headshot-section {
+  width: 144px;
+  height: 144px;
+  margin: 0 auto;
 }
 
 .headshot {
@@ -147,7 +158,39 @@ h4 a:hover {
   border-radius: 50%;
 }
 
-.profile-section {
-  margin: 40px auto;
+.heading {
   font-size: 1.2em;
+  margin-block-end: 2px;
+}
+
+.heading-subtitle {
+  font-size: 1em;
+  margin: 0 auto;
+}
+
+.info-table {
+  margin-bottom: 24px;
+}
+
+.info-table > tbody {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.info-table > tbody > tr > td > p {
+  margin: 6px 2px;
+}
+
+.icon-cell {
+  padding: 0 8px 0 0;
+}
+
+.profile-section {
+  margin: 20px auto 40px;
+  font-size: 1.2em;
+}
+
+.bio-section {
+  font-size: 1.2em;
+  line-height: 22px;
 }
