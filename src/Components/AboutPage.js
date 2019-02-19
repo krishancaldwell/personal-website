@@ -5,7 +5,6 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import { faServer } from '@fortawesome/free-solid-svg-icons'
 import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons'
-import { faPalette } from '@fortawesome/free-solid-svg-icons'
 
 function AboutPage() {
   return <div className="about-section">
@@ -38,10 +37,6 @@ function AboutPage() {
                    </tr>
                    <tr>
                      <td className="icon-cell"></td>
-                     <td><p>Swift</p></td>
-                   </tr>
-                   <tr>
-                     <td className="icon-cell"></td>
                      <td><p>PHP</p></td>
                    </tr>
                    <tr>
@@ -55,10 +50,6 @@ function AboutPage() {
                    <tr>
                      <td className="icon-cell"><FontAwesomeIcon icon={faProjectDiagram}/></td>
                      <td><p>Product Design</p></td>
-                   </tr>
-                   <tr>
-                     <td className="icon-cell"><FontAwesomeIcon icon={faPalette}/></td>
-                     <td><p>UI</p></td>
                    </tr>
                  </tbody>
                </table>

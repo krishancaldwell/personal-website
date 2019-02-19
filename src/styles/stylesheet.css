@@ -44,6 +44,41 @@ h4 a:hover {
   color: #5a5a5a;
 }
 
+.title-container h1 span {
+  transition: 0.7s linear;
+  content: 'Krishan Caldwell';
+}
+
+.title-container:hover h1 span {
+  display: none;
+}
+
+.title-container:hover h1:after {
+  transition: 0.7s linear;
+  content: 'カルドウェル・クリシャン';
+}
+/* .language-swap:before {
+  content: 'Krishan Caldwell';
+  opacity: 1;
+}
+
+.language-swap:after {
+  content: 'カルドウェル・クリシャン';
+  opacity: 0;
+}
+
+.language-swap:after, .language-swap:before {
+  transition: opacity 0.7s linear;
+}
+
+.language-swap:hover:before {
+  opacity: 0;
+}
+
+.language-swap:hover:after {
+  opacity: 1;
+} */
+
 .container {
   justify-content: center;
 }
@@ -193,4 +228,37 @@ h4 a:hover {
 .bio-section {
   font-size: 1.2em;
   line-height: 22px;
+}
+
+.work-section {
+  height: 700px;
+  background: #F8F8F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.work-entry {
+  width: 200px;
+  height: 200px;
+  margin: 12px;
+  border: 2px solid #e1e1e1;
+  border-radius: 50%;
+  display: flex;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  transition: 0.5s all;
+}
+
+.work-entry:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  transition: 0.5s all;
+}
+
+.company-logo {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
 }

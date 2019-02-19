@@ -7,6 +7,7 @@ import SocialSection from './SocialSection'
 import PageNotFound from './PageNotFound'
 import Footer from './Footer'
 import AboutPage from './AboutPage'
+import WorkPage from './WorkPage'
 
 
 class Main extends Component {
@@ -38,7 +39,7 @@ class Main extends Component {
                )} />
 
                <Route path="/work" render={() => (
-                   <MenuPage />
+                   <WorkPage />
                )} />
 
              <Route path="/about" render={() => (

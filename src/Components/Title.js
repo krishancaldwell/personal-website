@@ -2,8 +2,8 @@ import React from 'react'
 
 
 function Title(props) {
-  return <div>
-           <h1> {props.title} </h1>
+  return <div className="title-container">
+           <h1 className="name"><span> {props.title} </span></h1>
          </div>
 }
 
