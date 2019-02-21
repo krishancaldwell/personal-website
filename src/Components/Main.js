@@ -8,6 +8,7 @@ import PageNotFound from './PageNotFound'
 import Footer from './Footer'
 import AboutPage from './AboutPage'
 import WorkPage from './WorkPage'
+import BlogPage from './BlogPage'
 
 
 class Main extends Component {
@@ -47,7 +48,7 @@ class Main extends Component {
                )} />
 
                <Route path="/blog" render={() => (
-                   <MenuPage />
+                   <BlogPage />
                )} />
 
                <Route path="/contact" render={() => (
