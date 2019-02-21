@@ -16,6 +16,14 @@ h1 {
   color: #222222;
 }
 
+h2 {
+  font-size: 2.2em;
+  text-align: center;
+  font-weight: 200;
+  color: #999999;
+  margin: 0 0 18px;
+}
+
 h4 {
   font-size: 1.9em;
   font-weight: 300;
@@ -57,27 +65,6 @@ h4 a:hover {
   transition: 0.7s linear;
   content: 'カルドウェル・クリシャン';
 }
-/* .language-swap:before {
-  content: 'Krishan Caldwell';
-  opacity: 1;
-}
-
-.language-swap:after {
-  content: 'カルドウェル・クリシャン';
-  opacity: 0;
-}
-
-.language-swap:after, .language-swap:before {
-  transition: opacity 0.7s linear;
-}
-
-.language-swap:hover:before {
-  opacity: 0;
-}
-
-.language-swap:hover:after {
-  opacity: 1;
-} */
 
 .container {
   justify-content: center;
@@ -85,7 +72,7 @@ h4 a:hover {
 
 .home {
   height: 560px;
-  margin: 160px auto;
+  margin: 160px auto 100px;
 }
 
 .menu-section {
@@ -112,15 +99,6 @@ h4 a:hover {
   color: #333333;
 }
 
-.footer {
-  font-size: 1.1em;
-  color: #9C9C9C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
 .circle {
   margin: 160px auto 48px;
   justify-content: center;
@@ -134,7 +112,6 @@ h4 a:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 	filter: alpha(opacity=60);
 	opacity: 0.6;
-
 	-webkit-box-shadow: 0 0 1px 0px rgb( 255, 255, 255);
 	box-shadow: 0 0 1px 0px rgb( 255, 255, 255);
 	width: 380px;
@@ -236,7 +213,6 @@ h4 a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
 }
 
 .work-entry {
@@ -265,4 +241,78 @@ h4 a:hover {
 
 .back-link {
   color: #CE0B24;
+}
+
+.contact-section {
+  height: 700px;
+  padding-top: 30px;
+  background: #F7F7F7;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 80px auto;
+  flex-wrap: wrap;
+}
+
+.contact-form input[type='text'] {
+  width: 180px;
+  background-color: transparent;
+  padding: 12px;
+  margin: 10px 12px 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #aaaaaa;
+  color: #999999;
+}
+
+.contact-form input[type='text'].form-message {
+  width: 404px;
+  color: #999999;
+}
+
+.contact-form button {
+  transition: 0.25s linear;
+  width: 140px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #A7A8B0;
+  border-radius: 5px;
+  margin: 10px auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  transition: 0.25s linear;
+	-webkit-box-shadow: 0 0 1px 0px #eaeaea;
+	box-shadow: 2px 4px 1px 1px #eaeaea;
+}
+
+.footer {
+  font-size: 1.1em;
+  color: #9C9C9C;
+  margin-top: 30px;
+}
+
+.site-links {
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-links a {
+  margin: 0 4px 0 4px;
+}
+
+.copyright {
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import sosLogo from '../assets/sos_small.png'
 import qpayLogo from '../assets/qpay.png'
 import hnrLogo from '../assets/hacker_news_logo.png'
@@ -19,7 +18,7 @@ function WorkPreview() {
              </div>
            </a>
 
-           <a href="https://github.com/kthecaldwell/android-hacker-news-reader" target="_blank">
+           <a href="https://github.com/kthecaldwell/android-hacker-news-reader" target="_blank" rel="noopener noreferrer">
              <div className="work-entry">
                <img src={hnrLogo} alt="Hacker News Android app" className="company-logo"/>
              </div>

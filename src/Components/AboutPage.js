@@ -33,7 +33,7 @@ function AboutPage() {
                  <tbody>
                    <tr>
                      <td className="icon-cell"><FontAwesomeIcon icon={faLaptopCode}/></td>
-                     <td><p>Android</p></td>
+                     <td><p>Android (Java / Kotlin)</p></td>
                    </tr>
                    <tr>
                      <td className="icon-cell"></td>

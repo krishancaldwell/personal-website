@@ -2,13 +2,13 @@ import React, {Component} from 'react'
 import {Route, Switch, withRouter} from 'react-router-dom'
 import Title from './Title'
 import Menu from './Menu'
-import MenuPage from './MenuPage'
 import SocialSection from './SocialSection'
 import PageNotFound from './PageNotFound'
 import Footer from './Footer'
 import AboutPage from './AboutPage'
 import WorkPage from './WorkPage'
 import BlogPage from './BlogPage'
+import ContactPage from './ContactPage'
 
 
 class Main extends Component {
@@ -52,7 +52,7 @@ class Main extends Component {
                )} />
 
                <Route path="/contact" render={() => (
-                   <MenuPage />
+                   <ContactPage />
                )} />
 
                <Route render={({history}) => (
@@ -62,7 +62,7 @@ class Main extends Component {
                )} />
              </Switch>
 
-             <Footer />
+             <Footer items={this.state.menuItems}/>
 
            </div>
   }
@@ -79,19 +79,19 @@ function simulateFetchFromDatabase() {
     {
       id: 0,
       title: "Work",
-      link: ""
+      link: "/work"
     }, {
       id: 1,
       title: "About",
-      link: ""
+      link: "/about"
     }, {
       id: 2,
       title: "Blog",
-      link: ""
+      link: "/blog"
     }, {
       id: 3,
       title: "Contact",
-      link: ""
+      link: "/contact"
     }
   ]
 }
